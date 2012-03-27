@@ -1,0 +1,5 @@
+%h2 Movies by #{@movie.title} director #{@movie.director}
+
+%ul
+- @movies_with_director.each do |movie|
+  %li= link_to movie.title, movie_path(movie)
